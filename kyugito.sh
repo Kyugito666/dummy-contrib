@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Array tanggal membentuk huruf KYUGITO pada grid kontribusi
+# Array tanggal membentuk huruf KYUGITO (hasil dari generator)
 dates=(
   2025-01-07 2025-01-14 2025-01-21 2025-01-28 2025-02-04 2025-02-11 2025-02-18
   2025-01-14 2025-01-21 2025-01-28 2025-02-04 2025-02-11 2025-02-18
@@ -24,10 +24,14 @@ dates=(
   2025-10-27 2025-12-08
 )
 
+# File dummy sebagai target commit, jangan pakai README.md
+dummyfile="dummy.txt"
+echo "" > $dummyfile
+
 for d in "${dates[@]}"
 do
-  echo "$d - KYUGITO" >> dummy.txt
-  git add dummy.txt
+  echo "$d - KYUGITO" >> $dummyfile
+  git add $dummyfile
   GIT_AUTHOR_DATE="${d}T12:00:00" GIT_COMMITTER_DATE="${d}T12:00:00" git commit -m "Fake contribution $d"
 done
 
