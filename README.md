@@ -22,7 +22,7 @@ dummy-contrib/
 
 ### 1. Clone repo
 ```bash
-git clone https://github.com/kyugito666/dummy-contrib.git
+git clone https://github.com/Kyugito666/dummy-contrib.git
 cd dummy-contrib
 ```
 
