@@ -1,26 +1,26 @@
 #!/bin/bash
 
-# Ganti USERNAME di bawah dengan username GitHub lo
+# Ganti USERNAME dengan username GitHub kamu
 USERNAME="Kyugito666"
 
-# Fungsi ambil jumlah kontribusi tahun ini (scrape profil GitHub)
 get_contrib() {
     curl -s "https://github.com/$USERNAME" | grep -o 'data-count="[0-9]\+"' | head -1 | grep -o '[0-9]\+'
 }
 
 awal=$(get_contrib)
-echo "Kontribusi awal: $awal"
+if [ -z "$awal" ]; then awal=0; fi
 
 while true; do
     ./kyugito.sh
     git push origin main
-    sleep 15 # Delay biar Github update
+    sleep 15
 
     baru=$(get_contrib)
+    if [ -z "$baru" ]; then baru=0; fi
     echo "Kontribusi sekarang: $baru"
 
     if [ "$baru" -gt "$awal" ]; then
-        echo "Kontribusi sudah bertambah! Script berhenti."
+        echo "Kontribusi sudah bertambah! Selesai."
         break
     fi
 
