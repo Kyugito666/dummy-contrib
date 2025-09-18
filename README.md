@@ -73,7 +73,8 @@ dummy-contrib/
 | kyugito.sh | Skrip inti yang mengeksekusi serangkaian git commit dengan tanggal spesifik yang di-set di masa lalu. |
 | run.sh | Skrip pembungkus (wrapper) untuk menjalankan kyugito.sh, melakukan push, dan mengecek status profil. |
 | dummy.txt | File kosong yang menjadi target modifikasi. Ini mencegah README.md atau file penting lainnya terisi spam. |
-📜 Credits & Lisensi
+
+#### 📜 Credits & Lisensi
  * Inspirasi grid tanggal untuk membentuk pola diambil dari githut.xyz.
  * Dirilis di bawah Lisensi MIT.
 <p align="center">
