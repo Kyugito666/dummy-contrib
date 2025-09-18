@@ -1,195 +1,68 @@
-echo "# Dummy for Fake Contribution" > README.md
-git add README.md
-git commit -m "init"
+# Dummy-Contrib
+
+Repo ini adalah **alat otomatis untuk membuat fake contribution di GitHub**.  
+Cocok buat testing, iseng, dan ngisi kontribusi biar profile lebih rame.
+
+## Fitur
+
+- Membuat commit dengan tanggal custom untuk membentuk pola/huruf di contribution graph GitHub.
+- Script utama: `kyugito.sh`
+- Bisa auto-loop sampai kontribusi muncul: `run.sh`
+- Mudah di-custom sesuai kebutuhan.
+
+## Cara Pakai
+
+### 1. Clone repo
+```bash
+git clone https://github.com/Kyugito666/dummy-contrib.git
+cd dummy-contrib
+```
+
+### 2. Setting email Git yang sama dengan akun GitHub
+```bash
+git config user.email "EMAIL_GITHUB_KAMU"
+```
+
+### 3. Jalankan script utama
+```bash
+chmod +x kyugito.sh
+./kyugito.sh
+```
+
+### 4. Push ke GitHub
+```bash
 git push origin main
-2024-01-07 - KYUGITO
-2024-01-14 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-01-07 - KYUGITO
-2024-01-14 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-02-11 - KYUGITO
-2024-02-18 - KYUGITO
-2024-01-14 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-02-11 - KYUGITO
-2024-02-18 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-02-11 - KYUGITO
-2024-02-18 - KYUGITO
-2024-02-25 - KYUGITO
-2024-03-03 - KYUGITO
-2024-03-10 - KYUGITO
-2024-03-17 - KYUGITO
-2024-03-24 - KYUGITO
-2024-03-31 - KYUGITO
-2024-04-07 - KYUGITO
-2024-03-03 - KYUGITO
-2024-03-24 - KYUGITO
-2024-03-31 - KYUGITO
-2024-04-07 - KYUGITO
-2024-04-14 - KYUGITO
-2024-04-21 - KYUGITO
-2024-04-28 - KYUGITO
-2024-05-05 - KYUGITO
-2024-05-12 - KYUGITO
-2024-05-19 - KYUGITO
-2024-05-26 - KYUGITO
-2024-04-14 - KYUGITO
-2024-05-26 - KYUGITO
-2024-06-02 - KYUGITO
-2024-06-09 - KYUGITO
-2024-06-16 - KYUGITO
-2024-06-23 - KYUGITO
-2024-06-30 - KYUGITO
-2024-07-07 - KYUGITO
-2024-07-14 - KYUGITO
-2024-06-02 - KYUGITO
-2024-07-07 - KYUGITO
-2024-07-14 - KYUGITO
-2024-06-09 - KYUGITO
-2024-06-16 - KYUGITO
-2024-06-23 - KYUGITO
-2024-06-30 - KYUGITO
-2024-07-21 - KYUGITO
-2024-07-28 - KYUGITO
-2024-08-04 - KYUGITO
-2024-08-11 - KYUGITO
-2024-08-18 - KYUGITO
-2024-08-25 - KYUGITO
-2024-09-01 - KYUGITO
-2024-09-08 - KYUGITO
-2024-09-15 - KYUGITO
-2024-09-22 - KYUGITO
-2024-09-29 - KYUGITO
-2024-10-06 - KYUGITO
-2024-10-13 - KYUGITO
-2024-10-20 - KYUGITO
-2024-09-08 - KYUGITO
-2024-10-20 - KYUGITO
-2024-10-27 - KYUGITO
-2024-11-03 - KYUGITO
-2024-11-10 - KYUGITO
-2024-11-17 - KYUGITO
-2024-11-24 - KYUGITO
-2024-12-01 - KYUGITO
-2024-12-08 - KYUGITO
-2024-10-27 - KYUGITO
-2024-12-08 - KYUGITO
-2024-01-07 - KYUGITO
-2024-01-14 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-01-07 - KYUGITO
-2024-01-14 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-02-11 - KYUGITO
-2024-02-18 - KYUGITO
-2024-01-14 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-02-11 - KYUGITO
-2024-02-18 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-02-11 - KYUGITO
-2024-02-18 - KYUGITO
-2024-02-25 - KYUGITO
-2024-03-03 - KYUGITO
-2024-03-10 - KYUGITO
-2024-03-17 - KYUGITO
-2024-03-24 - KYUGITO
-2024-03-31 - KYUGITO
-2024-04-07 - KYUGITO
-2024-03-03 - KYUGITO
-2024-03-24 - KYUGITO
-2024-03-31 - KYUGITO
-2024-04-07 - KYUGITO
-2024-04-14 - KYUGITO
-2024-04-21 - KYUGITO
-2024-04-28 - KYUGITO
-2024-05-05 - KYUGITO
-2024-05-12 - KYUGITO
-2024-05-19 - KYUGITO
-2024-05-26 - KYUGITO
-2024-04-14 - KYUGITO
-2024-05-26 - KYUGITO
-2024-06-02 - KYUGITO
-2024-06-09 - KYUGITO
-2024-06-16 - KYUGITO
-2024-06-23 - KYUGITO
-2024-06-30 - KYUGITO
-2024-07-07 - KYUGITO
-2024-07-14 - KYUGITO
-2024-06-02 - KYUGITO
-2024-07-07 - KYUGITO
-2024-07-14 - KYUGITO
-2024-06-09 - KYUGITO
-2024-06-16 - KYUGITO
-2024-06-23 - KYUGITO
-2024-06-30 - KYUGITO
-2024-07-21 - KYUGITO
-2024-07-28 - KYUGITO
-2024-08-04 - KYUGITO
-2024-08-11 - KYUGITO
-2024-08-18 - KYUGITO
-2024-08-25 - KYUGITO
-2024-09-01 - KYUGITO
-2024-09-08 - KYUGITO
-2024-09-15 - KYUGITO
-2024-09-22 - KYUGITO
-2024-09-29 - KYUGITO
-2024-10-06 - KYUGITO
-2024-10-13 - KYUGITO
-2024-10-20 - KYUGITO
-2024-09-08 - KYUGITO
-2024-10-20 - KYUGITO
-2024-10-27 - KYUGITO
-2024-11-03 - KYUGITO
-2024-11-10 - KYUGITO
-2024-11-17 - KYUGITO
-2024-11-24 - KYUGITO
-2024-12-01 - KYUGITO
-2024-12-08 - KYUGITO
-2024-10-27 - KYUGITO
-2024-12-08 - KYUGITO
-2024-01-07 - KYUGITO
-2024-01-14 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-01-07 - KYUGITO
-2024-01-14 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-02-11 - KYUGITO
-2024-02-18 - KYUGITO
-2024-01-14 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-02-11 - KYUGITO
-2024-02-18 - KYUGITO
-2024-01-21 - KYUGITO
-2024-01-28 - KYUGITO
-2024-02-04 - KYUGITO
-2024-02-11 - KYUGITO
-2024-02-18 - KYUGITO
-2024-02-25 - KYUGITO
+```
+
+### 5. (Opsional) Jalanin auto-loop sampai kontribusi muncul
+```bash
+chmod +x run.sh
+./run.sh
+```
+
+## Struktur Repo
+
+```
+dummy-contrib/
+├── kyugito.sh    # Script generator commit fake kontribusi
+├── run.sh        # Script auto-loop cek kontribusi
+├── README.md     # Dokumentasi repo
+```
+
+## Penjelasan Script
+
+- **kyugito.sh**  
+  Membuat banyak commit dengan tanggal custom dan pesan "Fake contribution {tanggal}".  
+  Tanggal-tanggal diatur untuk membentuk huruf KYUGITO di contribution graph.
+
+- **run.sh**  
+  Jalanin kyugito.sh, push, dan cek kontribusi di profil GitHub.  
+  Loop otomatis sampai kontribusi bertambah.
+
+## Contoh Output di README.md
+
+Setiap baris:
+```
 2025-01-07 - KYUGITO
 2025-01-14 - KYUGITO
 2025-01-21 - KYUGITO
@@ -498,3 +371,13 @@ git push origin main
 2025-12-08 - KYUGITO
 2025-10-27 - KYUGITO
 2025-12-08 - KYUGITO
+...
+```
+Setiap commit akan muncul di contribution graph sesuai tanggalnya.
+
+## Credits
+
+Terinspirasi dari [githut.xyz](https://githut.xyz/) untuk grid tanggal dan visualisasi.
+
+**Enjoy your fake contributions! 🎉**
+>>>>>>> 96839edd4dc411895fee444dc0476ce40c9d39a2
