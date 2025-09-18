@@ -1,65 +1,82 @@
-# Dummy-Contrib
+<div align="center">
+  <h1>🎨 Dummy-Contrib</h1>
+  <p>
+    <strong>Sebuah skrip sederhana untuk 'melukis' grafik kontribusi GitHub Anda.</strong>
+  </p>
+  <p>
+    Buat pola, tulis nama, atau hidupkan kembali hari-hari yang kosong. Gunakan dengan bijak!
+  </p>
 
-Repo ini digunakan untuk membuat kontribusi palsu (fake contribution) di GitHub.
+  <p>
+    <img src="https://img.shields.io/github/last-commit/Kyugito666/dummy-contrib?style=for-the-badge&logo=github&color=blueviolet" alt="Last Commit">
+    <img src="https://img.shields.io/github/repo-size/Kyugito666/dummy-contrib?style=for-the-badge&logo=github&color=informational" alt="Repo Size">
+    <img src="https://img.shields.io/github/license/Kyugito666/dummy-contrib?style=for-the-badge&color=success" alt="License">
+  </p>
+</div>
 
-## Fitur
-- Membuat commit otomatis dengan tanggal khusus untuk membentuk pola/huruf di graph kontribusi GitHub.
-- Script utama: `kyugito.sh`
-- Script auto-loop hingga kontribusi terdeteksi: `run.sh`
-- File dummy (`dummy.txt`) digunakan buat commit, supaya README.md tetap bersih.
+> **⚠️ Peringatan Penting**
+> Alat ini ditujukan untuk **penggunaan pribadi, artistik, atau tujuan edukasi**. Menggunakannya untuk memalsukan aktivitas profesional atau mengelabui perekrut adalah tindakan yang **tidak etis dan tidak disarankan**. Gunakan dengan risiko Anda sendiri.
 
-## Struktur Folder
+## ✨ Fitur Utama
+- **Generator Commit**: Membuat commit secara otomatis pada tanggal-tanggal di masa lalu.
+- **Kustomisasi Pola**: Mudah diubah untuk membuat pola atau tulisan di grafik kontribusi.
+- **Skrip Otomatis**: Dilengkapi skrip `run.sh` untuk menjalankan proses secara berulang hingga kontribusi terdeteksi.
+- **Repo Bersih**: Proses commit dilakukan pada file `dummy.txt`, menjaga `README.md` tetap bersih.
 
-```
-dummy-contrib/
-├── README.md           # Dokumentasi repo
-├── kyugito.sh          # Script generator kontribusi palsu
-├── run.sh              # Script auto-loop cek kontribusi
-├── dummy.txt           # File dummy (tempat commit, agar README.md tetap bersih)
-```
+## 🚀 Panduan Cepat
 
-## Cara Pakai
+Ikuti langkah-langkah berikut untuk memulai:
 
-### 1. Clone repo
+#### 1. Clone Repositori
 ```bash
 git clone https://github.com/Kyugito666/dummy-contrib.git
 cd dummy-contrib
 ```
-
-### 2. Setting email git agar sama dengan akun GitHub kamu
+#### 2. Konfigurasi Git
+Pastikan email yang Anda gunakan sama persis dengan email utama di akun GitHub Anda agar kontribusi tercatat.
+# Ganti dengan email GitHub Anda
 ```bash
-git config user.email "EMAIL_GITHUB_KAMU"
+git config user.email "youremail@example.com"
 ```
 
-### 3. Jalankan script utama kontribusi
+#### 3. Jalankan Skrip
+Ubah skrip menjadi executable dan jalankan skrip utama.
 ```bash
 chmod +x kyugito.sh
 ./kyugito.sh
 ```
 
-### 4. Push ke GitHub
+#### 5. Push ke GitHub
+Dorong semua commit yang telah dibuat ke repositori Anda.
 ```bash
 git push origin main
 ```
 
-### 5. (Opsional) Jalankan script auto-loop sampai kontribusi muncul di profil
+Setelah push berhasil, tunggu beberapa menit hingga GitHub memproses dan menampilkan kontribusi Anda di grafik profil.
+#### 6. (Opsional) Gunakan Auto-Loop
+Jika kontribusi belum muncul, skrip ini akan otomatis melakukan commit & push kecil secara berkala hingga profil Anda ter-update.
 ```bash
 chmod +x run.sh
 ./run.sh
 ```
+```bash
+📂 Struktur Repositori
+dummy-contrib/
+├── 📜 README.md      # Dokumentasi yang sedang Anda baca
+├── ⚙️ kyugito.sh     # Skrip inti untuk menghasilkan commit
+├── 🔄 run.sh         # Skrip wrapper untuk auto-loop
+└── 📄 dummy.txt       # File target untuk dimodifikasi oleh commit
+```
+#### 🛠️ Penjelasan Skrip
+| File | Fungsi Utama |
+|---|---|
+| kyugito.sh | Skrip inti yang mengeksekusi serangkaian git commit dengan tanggal spesifik yang di-set di masa lalu. |
+| run.sh | Skrip pembungkus (wrapper) untuk menjalankan kyugito.sh, melakukan push, dan mengecek status profil. |
+| dummy.txt | File kosong yang menjadi target modifikasi. Ini mencegah README.md atau file penting lainnya terisi spam. |
+📜 Credits & Lisensi
+ * Inspirasi grid tanggal untuk membentuk pola diambil dari githut.xyz.
+ * Dirilis di bawah Lisensi MIT.
+<p align="center">
+Happy painting your contribution graph! 🎨
+</p>
 
-## Penjelasan Script
-
-- **kyugito.sh:**  
-  Membuat commit dengan tanggal custom. Isi commit ditulis ke `dummy.txt`, bukan README.md.
-
-- **run.sh:**  
-  Menjalankan kyugito.sh, push ke remote, dan cek kontribusi di profil GitHub. Loop otomatis sampai kontribusi bertambah.
-
-## Credits
-
-Grid tanggal diambil dari [githut.xyz](https://githut.xyz/) untuk visualisasi huruf di graph.
-
----
-
-**Enjoy your fake contributions! 🚀**
